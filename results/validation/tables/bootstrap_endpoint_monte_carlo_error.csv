@@ -1,0 +1,3 @@
+kappa,policy_id,published_upper_endpoint,endpoint_mc_low,endpoint_mc_high,bootstrap_draws,endpoint_resamples
+0.001,adaptive_0.05,2.0045072304283997,2.0005396000749274,2.0071141761407794,500,3000
+0.002,adaptive_0.05,2.569161581013387,2.565019490397473,2.573587160784144,500,3000

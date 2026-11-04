@@ -1,0 +1,380 @@
+{
+  "study_configuration": {
+    "study_id": "european_call_cost_risk_v1",
+    "s0": 100.0,
+    "strike": 100.0,
+    "maturity": 1.0,
+    "r": 0.0,
+    "mu": 0.05,
+    "sigma_true": 0.2,
+    "sigma_model": 0.2,
+    "n_steps": 252,
+    "n_calibration": 20000,
+    "n_evaluation": 20000,
+    "calibration_seed": 202611,
+    "evaluation_seed": 202612,
+    "calibration_bootstrap_seed": 731,
+    "evaluation_bootstrap_seed": 732,
+    "stress_bootstrap_seed": 733,
+    "n_bootstrap": 500,
+    "confidence": 0.95,
+    "weekly_interval": 5,
+    "epsilon_grid": [
+      0.005,
+      0.01,
+      0.02,
+      0.03,
+      0.05
+    ],
+    "cost_grid": [
+      0.0,
+      0.0001,
+      0.0005,
+      0.001,
+      0.002,
+      0.005
+    ],
+    "baseline_kappa": 0.002,
+    "risk_budgets": [
+      1.0,
+      2.0,
+      3.0
+    ],
+    "primary_risk_budget": 3.0,
+    "feasibility_rule": "point_estimate",
+    "stress_volatilities": [
+      0.2,
+      0.25,
+      0.3
+    ],
+    "premium_convention": "fixed_model_volatility",
+    "notes": "Fixed benchmark budgets, grids and seeds; currency per option. Selection uses calibration paths only."
+  },
+  "configuration_sha256": "c8015ab654d5638914afa8fd94f220f4e032ef1a72ee1e041f023c076c808152",
+  "candidates": [
+    {
+      "policy_id": "daily",
+      "strategy": "daily",
+      "epsilon": null
+    },
+    {
+      "policy_id": "weekly",
+      "strategy": "weekly",
+      "epsilon": null
+    },
+    {
+      "policy_id": "adaptive_0.005",
+      "strategy": "adaptive",
+      "epsilon": 0.005
+    },
+    {
+      "policy_id": "adaptive_0.01",
+      "strategy": "adaptive",
+      "epsilon": 0.01
+    },
+    {
+      "policy_id": "adaptive_0.02",
+      "strategy": "adaptive",
+      "epsilon": 0.02
+    },
+    {
+      "policy_id": "adaptive_0.03",
+      "strategy": "adaptive",
+      "epsilon": 0.03
+    },
+    {
+      "policy_id": "adaptive_0.05",
+      "strategy": "adaptive",
+      "epsilon": 0.05
+    }
+  ],
+  "calibration_paths_sha256": "46806c98f5c6ebe1c0b96587960b93a452e257cd6b0b4ca8addfa40b0a915c40",
+  "selection_data": "calibration_only",
+  "decisions": [
+    {
+      "kappa": 0.0,
+      "risk_budget": 1.0,
+      "feasibility_rule": "point_estimate",
+      "feasible_policies": [],
+      "n_feasible": 0,
+      "selected_policy": null,
+      "status": "no_feasible_strategy"
+    },
+    {
+      "kappa": 0.0,
+      "risk_budget": 2.0,
+      "feasibility_rule": "point_estimate",
+      "feasible_policies": [
+        "daily",
+        "adaptive_0.005",
+        "adaptive_0.01",
+        "adaptive_0.02",
+        "adaptive_0.03",
+        "adaptive_0.05"
+      ],
+      "n_feasible": 6,
+      "selected_policy": "daily",
+      "status": "selected",
+      "calibration_mean_cost": 0.0,
+      "calibration_es": 1.00462771698631,
+      "calibration_es_ci_low": 0.9784778533199454,
+      "calibration_es_ci_high": 1.0270850195393144,
+      "calibration_headroom": 0.99537228301369,
+      "calibration_upper_bound_headroom": 0.9729149804606856
+    },
+    {
+      "kappa": 0.0,
+      "risk_budget": 3.0,
+      "feasibility_rule": "point_estimate",
+      "feasible_policies": [
+        "daily",
+        "weekly",
+        "adaptive_0.005",
+        "adaptive_0.01",
+        "adaptive_0.02",
+        "adaptive_0.03",
+        "adaptive_0.05"
+      ],
+      "n_feasible": 7,
+      "selected_policy": "daily",
+      "status": "selected",
+      "calibration_mean_cost": 0.0,
+      "calibration_es": 1.00462771698631,
+      "calibration_es_ci_low": 0.9784778533199454,
+      "calibration_es_ci_high": 1.0270850195393144,
+      "calibration_headroom": 1.99537228301369,
+      "calibration_upper_bound_headroom": 1.9729149804606856
+    },
+    {
+      "kappa": 0.0001,
+      "risk_budget": 1.0,
+      "feasibility_rule": "point_estimate",
+      "feasible_policies": [],
+      "n_feasible": 0,
+      "selected_policy": null,
+      "status": "no_feasible_strategy"
+    },
+    {
+      "kappa": 0.0001,
+      "risk_budget": 2.0,
+      "feasibility_rule": "point_estimate",
+      "feasible_policies": [
+        "daily",
+        "adaptive_0.005",
+        "adaptive_0.01",
+        "adaptive_0.02",
+        "adaptive_0.03",
+        "adaptive_0.05"
+      ],
+      "n_feasible": 6,
+      "selected_policy": "adaptive_0.05",
+      "status": "selected",
+      "calibration_mean_cost": 0.03980091289226676,
+      "calibration_es": 1.5073887308060754,
+      "calibration_es_ci_low": 1.4771347776592478,
+      "calibration_es_ci_high": 1.5359631823951112,
+      "calibration_headroom": 0.4926112691939246,
+      "calibration_upper_bound_headroom": 0.4640368176048888
+    },
+    {
+      "kappa": 0.0001,
+      "risk_budget": 3.0,
+      "feasibility_rule": "point_estimate",
+      "feasible_policies": [
+        "daily",
+        "weekly",
+        "adaptive_0.005",
+        "adaptive_0.01",
+        "adaptive_0.02",
+        "adaptive_0.03",
+        "adaptive_0.05"
+      ],
+      "n_feasible": 7,
+      "selected_policy": "weekly",
+      "status": "selected",
+      "calibration_mean_cost": 0.03476783279299824,
+      "calibration_es": 2.260221864917604,
+      "calibration_es_ci_low": 2.21339723800445,
+      "calibration_es_ci_high": 2.318539207390212,
+      "calibration_headroom": 0.7397781350823962,
+      "calibration_upper_bound_headroom": 0.681460792609788
+    },
+    {
+      "kappa": 0.0005,
+      "risk_budget": 1.0,
+      "feasibility_rule": "point_estimate",
+      "feasible_policies": [],
+      "n_feasible": 0,
+      "selected_policy": null,
+      "status": "no_feasible_strategy"
+    },
+    {
+      "kappa": 0.0005,
+      "risk_budget": 2.0,
+      "feasibility_rule": "point_estimate",
+      "feasible_policies": [
+        "daily",
+        "adaptive_0.005",
+        "adaptive_0.01",
+        "adaptive_0.02",
+        "adaptive_0.03",
+        "adaptive_0.05"
+      ],
+      "n_feasible": 6,
+      "selected_policy": "adaptive_0.05",
+      "status": "selected",
+      "calibration_mean_cost": 0.19900456446133383,
+      "calibration_es": 1.707769783491705,
+      "calibration_es_ci_low": 1.6774891323008396,
+      "calibration_es_ci_high": 1.7372306309709382,
+      "calibration_headroom": 0.29223021650829506,
+      "calibration_upper_bound_headroom": 0.2627693690290618
+    },
+    {
+      "kappa": 0.0005,
+      "risk_budget": 3.0,
+      "feasibility_rule": "point_estimate",
+      "feasible_policies": [
+        "daily",
+        "weekly",
+        "adaptive_0.005",
+        "adaptive_0.01",
+        "adaptive_0.02",
+        "adaptive_0.03",
+        "adaptive_0.05"
+      ],
+      "n_feasible": 7,
+      "selected_policy": "weekly",
+      "status": "selected",
+      "calibration_mean_cost": 0.17383916396499116,
+      "calibration_es": 2.440469186590293,
+      "calibration_es_ci_low": 2.3936877824968303,
+      "calibration_es_ci_high": 2.500678362275506,
+      "calibration_headroom": 0.5595308134097068,
+      "calibration_upper_bound_headroom": 0.4993216377244938
+    },
+    {
+      "kappa": 0.001,
+      "risk_budget": 1.0,
+      "feasibility_rule": "point_estimate",
+      "feasible_policies": [],
+      "n_feasible": 0,
+      "selected_policy": null,
+      "status": "no_feasible_strategy"
+    },
+    {
+      "kappa": 0.001,
+      "risk_budget": 2.0,
+      "feasibility_rule": "point_estimate",
+      "feasible_policies": [
+        "daily",
+        "adaptive_0.005",
+        "adaptive_0.01",
+        "adaptive_0.02",
+        "adaptive_0.03",
+        "adaptive_0.05"
+      ],
+      "n_feasible": 6,
+      "selected_policy": "adaptive_0.05",
+      "status": "selected",
+      "calibration_mean_cost": 0.39800912892266765,
+      "calibration_es": 1.9702295310020155,
+      "calibration_es_ci_low": 1.939467458962601,
+      "calibration_es_ci_high": 2.001044996160498,
+      "calibration_headroom": 0.029770468997984523,
+      "calibration_upper_bound_headroom": -0.001044996160497913
+    },
+    {
+      "kappa": 0.001,
+      "risk_budget": 3.0,
+      "feasibility_rule": "point_estimate",
+      "feasible_policies": [
+        "daily",
+        "weekly",
+        "adaptive_0.005",
+        "adaptive_0.01",
+        "adaptive_0.02",
+        "adaptive_0.03",
+        "adaptive_0.05"
+      ],
+      "n_feasible": 7,
+      "selected_policy": "weekly",
+      "status": "selected",
+      "calibration_mean_cost": 0.3476783279299823,
+      "calibration_es": 2.668338324260956,
+      "calibration_es_ci_low": 2.621147022876069,
+      "calibration_es_ci_high": 2.7297542382243125,
+      "calibration_headroom": 0.3316616757390438,
+      "calibration_upper_bound_headroom": 0.2702457617756875
+    },
+    {
+      "kappa": 0.002,
+      "risk_budget": 1.0,
+      "feasibility_rule": "point_estimate",
+      "feasible_policies": [],
+      "n_feasible": 0,
+      "selected_policy": null,
+      "status": "no_feasible_strategy"
+    },
+    {
+      "kappa": 0.002,
+      "risk_budget": 2.0,
+      "feasibility_rule": "point_estimate",
+      "feasible_policies": [],
+      "n_feasible": 0,
+      "selected_policy": null,
+      "status": "no_feasible_strategy"
+    },
+    {
+      "kappa": 0.002,
+      "risk_budget": 3.0,
+      "feasibility_rule": "point_estimate",
+      "feasible_policies": [
+        "daily",
+        "adaptive_0.005",
+        "adaptive_0.01",
+        "adaptive_0.02",
+        "adaptive_0.03",
+        "adaptive_0.05"
+      ],
+      "n_feasible": 6,
+      "selected_policy": "adaptive_0.05",
+      "status": "selected",
+      "calibration_mean_cost": 0.7960182578453353,
+      "calibration_es": 2.5301011094469867,
+      "calibration_es_ci_low": 2.4953169523381797,
+      "calibration_es_ci_high": 2.562179524147789,
+      "calibration_headroom": 0.46989889055301326,
+      "calibration_upper_bound_headroom": 0.43782047585221084
+    },
+    {
+      "kappa": 0.005,
+      "risk_budget": 1.0,
+      "feasibility_rule": "point_estimate",
+      "feasible_policies": [],
+      "n_feasible": 0,
+      "selected_policy": null,
+      "status": "no_feasible_strategy"
+    },
+    {
+      "kappa": 0.005,
+      "risk_budget": 2.0,
+      "feasibility_rule": "point_estimate",
+      "feasible_policies": [],
+      "n_feasible": 0,
+      "selected_policy": null,
+      "status": "no_feasible_strategy"
+    },
+    {
+      "kappa": 0.005,
+      "risk_budget": 3.0,
+      "feasibility_rule": "point_estimate",
+      "feasible_policies": [],
+      "n_feasible": 0,
+      "selected_policy": null,
+      "status": "no_feasible_strategy"
+    }
+  ],
+  "tie_break": "mean_cost, then ES, then lexical policy_id",
+  "evaluation_policy": "evaluate frozen choices; never reselect on evaluation or stress"
+}

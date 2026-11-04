@@ -1,0 +1,112 @@
+{
+  "scope": "Finite-policy ES-constrained simulation study",
+  "configuration": {
+    "selection_file": "D:\\6_CentraleSupelec\\2025-2026\\S8\\Advanced derivatives\\adaptive-delta-hedging\\results\\03_cost_risk_optimisation\\frozen_selection.json",
+    "output_dir": "D:\\6_CentraleSupelec\\2025-2026\\S8\\Advanced derivatives\\adaptive-delta-hedging\\results\\04_volatility_stress_test",
+    "figures_dir": "D:\\6_CentraleSupelec\\2025-2026\\S8\\Advanced derivatives\\adaptive-delta-hedging\\results\\figures"
+  },
+  "command": "C:\\Users\\luluc\\AppData\\Local\\Programs\\Python\\Python312\\python.exe experiments/04_volatility_stress_test.py",
+  "python": "3.12.6",
+  "platform": "Windows-11-10.0.22631-SP0",
+  "dependencies": {
+    "numpy": "2.4.2",
+    "scipy": "1.15.2",
+    "pandas": "3.0.0",
+    "matplotlib": "3.10.8",
+    "pytest": "8.3.3"
+  },
+  "git_commit": null,
+  "source_sha256": {
+    "src\\__init__.py": "a603f237b9614281e5152fd715934d2edc07313eb27fb46d90b2ae072119d60a",
+    "src\\black_scholes.py": "c83b7da9e940ae6a8a286df97c43a9c555ccda50721589d7f67829177ab0eef4",
+    "src\\hedging.py": "b4cce42611797eae4950a21d84a382c4de5af5e1e7b5bb206ef927392ff9f6b7",
+    "src\\metrics.py": "6972c4a282db71972c9c24b41a85b93bcfac70da618a9065750d0c599fd3210c",
+    "src\\monte_carlo.py": "be1b73b2b3a52455775c4e26b04220dc0f1eb73e33e4e0aeb54c09a0caa46d61",
+    "src\\optimisation.py": "8c0f98c547e06302ac8aa3e3c5720f4de1804f218c36481a476f84191ea2bb2e",
+    "src\\plotting.py": "b392b49690a18af1ea30617199fdf3f9752f6be0d64d94413cc445b114c6ff7f",
+    "src\\risk_metrics.py": "0a85ebe22317fe74de4546260ee7f0e67179e18ef106e1766148fac4e99da8dd",
+    "src\\risk_plotting.py": "5faa4198f7e4c3e2002df9170adacf20742ee3e2bf16d625f56fbf8daef83b57",
+    "experiments\\01_model_validation.py": "047e31ee97bac0c66640cd8319dbd7df0b2157c431c9525d5d313e5f683838b7",
+    "experiments\\02_baseline_hedging.py": "043b68b45d16a4899704b72e17ee9e9cb216b319c1b8108ad3845addb83816ce",
+    "experiments\\03_cost_risk_optimisation.py": "a5939896b5280745cbb6f4330959da655921587f3d654299bb4e27993405a0d9",
+    "experiments\\04_volatility_stress_test.py": "6076c244a1d7251dfd73a7cb5d42690ed5a55134d5d9365d7c74b5d30a5b5472",
+    "experiments\\__init__.py": "ebdad7da4b65fb09d14d77e3988c5abc0043319e6bc2f55efd07544b1f05970d",
+    "experiments\\_common.py": "11fac4f4b5bd46a289172af39e4a33984a9ed790512a044908eef90ae67fb87b",
+    "experiments\\_risk_common.py": "a795d3f9f5f5db92933cf945a05ce7747302a80d84eb432f5b1b9e0f2984ca50"
+  },
+  "settlement": "cash-settled call; stock liquidated once at maturity, closing spread paid",
+  "counts": "executed nonzero trades; opening, interior and closing reported separately",
+  "gross": "fee-free shadow using identical stock trades; gross-net = terminal-valued fees",
+  "study_configuration": {
+    "study_id": "european_call_cost_risk_v1",
+    "s0": 100.0,
+    "strike": 100.0,
+    "maturity": 1.0,
+    "r": 0.0,
+    "mu": 0.05,
+    "sigma_true": 0.2,
+    "sigma_model": 0.2,
+    "n_steps": 252,
+    "n_calibration": 20000,
+    "n_evaluation": 20000,
+    "calibration_seed": 202611,
+    "evaluation_seed": 202612,
+    "calibration_bootstrap_seed": 731,
+    "evaluation_bootstrap_seed": 732,
+    "stress_bootstrap_seed": 733,
+    "n_bootstrap": 500,
+    "confidence": 0.95,
+    "weekly_interval": 5,
+    "epsilon_grid": [
+      0.005,
+      0.01,
+      0.02,
+      0.03,
+      0.05
+    ],
+    "cost_grid": [
+      0.0,
+      0.0001,
+      0.0005,
+      0.001,
+      0.002,
+      0.005
+    ],
+    "baseline_kappa": 0.002,
+    "risk_budgets": [
+      1.0,
+      2.0,
+      3.0
+    ],
+    "primary_risk_budget": 3.0,
+    "feasibility_rule": "point_estimate",
+    "stress_volatilities": [
+      0.2,
+      0.25,
+      0.3
+    ],
+    "premium_convention": "fixed_model_volatility",
+    "notes": "Fixed benchmark budgets, grids and seeds; currency per option. Selection uses calibration paths only."
+  },
+  "configuration_sha256": "c8015ab654d5638914afa8fd94f220f4e032ef1a72ee1e041f023c076c808152",
+  "risk_measure": "empirical upper-tail quantile-integral ES of losses=-pnl_net",
+  "uncertainty": "paired iid path percentile bootstrap; pointwise 95% intervals",
+  "selection_file_sha256": "901fce65a7cfd05f28037164bfc3836a11ec44c21afd5f9a130a193939a43b63",
+  "selected_policy_primary": "adaptive_0.05",
+  "paths_sha256_by_volatility": {
+    "0.2": "b1a9ba8e8c424a3f66cffa69595c8dabbf16489050e8fa720fb493e1a00471bb",
+    "0.25": "e0fd23cf8360bd8a898e0fe611e6894e9b09793dbf423624bf443294467e0568",
+    "0.3": "f020f6ec15468a1daba212415cb54438ef2be242fb5abd2ed8c9e00bbcd79fbe"
+  },
+  "paired_shocks_across_volatilities": true,
+  "reoptimised_under_stress": false,
+  "baseline_reproduces_frozen_evaluation": true,
+  "max_gross_net_reconciliation_error": {
+    "0.2": 4.440892098500626e-16,
+    "0.25": 8.881784197001252e-16,
+    "0.3": 1.7763568394002505e-15
+  },
+  "principal_premium": 7.965567455405804,
+  "fair_premium_is_supplementary_only": true,
+  "bootstrap_columns": "sorted volatility scenarios, then frozen candidate order"
+}

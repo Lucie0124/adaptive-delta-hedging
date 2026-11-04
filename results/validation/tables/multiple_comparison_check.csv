@@ -1,0 +1,7 @@
+first,second,raw_p_mean_pnl,holm_p_six_mean_pnl_tests
+daily,adaptive_0.01,0.0,0.0
+weekly,adaptive_0.01,0.0,0.0
+daily,adaptive_0.05,0.0,0.0
+weekly,adaptive_0.05,1.6205712399607794e-75,1.6205712399607794e-75
+adaptive_0.03,adaptive_0.05,0.0,0.0
+daily,weekly,0.0,0.0

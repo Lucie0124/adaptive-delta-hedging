@@ -1,0 +1,13 @@
+{
+  "pricing_error_below_five_standard_errors": true,
+  "coarse_to_fine_mse_improvement_positive_at_95pct": true,
+  "convergence_diagnostic_passed": true,
+  "convergence_criterion": "positive paired coarse-to-fine MSE improvement",
+  "overall_paired_mse_improvement": {
+    "mean": 3.7312116261414023,
+    "standard_error": 0.16147759135868375,
+    "ci_low": 3.414721362768106,
+    "ci_high": 4.047701889514698
+  },
+  "note": "A 95% price CI may miss in a valid sample; the diagnostic price gate uses five SE."
+}

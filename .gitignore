@@ -1,0 +1,62 @@
+# Local Python environments and generated caches.
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.py[cod]
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Editor, operating-system and local configuration files.
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.env
+.env.*
+!.env.example
+
+# Temporary outputs and LaTeX compilation intermediates.
+/tmp/
+/scratch/
+/.cleanup-backups/
+*.tmp
+*.bak
+*~
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.lof
+*.lot
+
+# Final report artifacts are generated locally from the academic documents.
+/docs/research_report.pdf
+/docs/research_report.tex
+/results/validation/report_build.json
+
+# Supplementary literature comparison, outside the core simulation study.
+/docs/literature_comparison.md
+/validation/literature_benchmarks.py
+/results/validation/literature/
+
+# Local execution transcripts; numerical evidence remains versionable.
+/results/validation/diagnostics/*.txt
+
+# Historical coursework is retained locally; publish the current study.
+/archive/
+
+# Keep source code, tests, configuration, academic documentation, result tables,
+# figures and raw arrays needed for reproduction.

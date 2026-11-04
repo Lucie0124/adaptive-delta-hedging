@@ -1,0 +1,48 @@
+{
+  "executions": [
+    {
+      "command": [
+        "python",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "experiments/01_model_validation.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "experiments/02_baseline_hedging.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "experiments/03_cost_risk_optimisation.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "experiments/04_volatility_stress_test.py"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "identical_csv_tables": 17,
+  "identical_npz_arrays": 51,
+  "numerical_source_ast_unchanged": true,
+  "tolerance": "exact equality",
+  "independent_validation_csv_tables": 11,
+  "independent_validation_npz_arrays": 8,
+  "test_result": "138 passed in 40.64s"
+}

@@ -1,0 +1,5 @@
+policy_id,metric,difference,low,high
+daily,ES wrong-minus-correct volatility; same fair premium,1.5963968275207687,1.5654047023867892,1.6271498911151974
+weekly,ES wrong-minus-correct volatility; same fair premium,1.2264225097903982,1.188525667795729,1.2630422422825016
+adaptive_0.01,ES wrong-minus-correct volatility; same fair premium,1.602131648971616,1.5723364645555316,1.6337386398612952
+adaptive_0.05,ES wrong-minus-correct volatility; same fair premium,1.2732496589376758,1.2230020206760583,1.3206520305807763

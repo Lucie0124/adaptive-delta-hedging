@@ -1,0 +1,9 @@
+{
+  "bs_call_price_r_minus_1000": "nan",
+  "cash_r_1000": "-inf",
+  "delta_tiny_positive_vol_time": "nan",
+  "gamma_tiny_positive_vol_time": "nan",
+  "correct_reference_pnl": 3.1371181365197334,
+  "wrong_reference_pnl": 3.250481982347913,
+  "scope": "latent API/finite-input edge limitations; not configured study errors"
+}

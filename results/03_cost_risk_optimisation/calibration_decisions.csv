@@ -1,0 +1,19 @@
+kappa,risk_budget,feasibility_rule,feasible_policies,n_feasible,selected_policy,status,calibration_mean_cost,calibration_es,calibration_es_ci_low,calibration_es_ci_high,calibration_headroom,calibration_upper_bound_headroom
+0.0,1.0,point_estimate,[],0,,no_feasible_strategy,,,,,,
+0.0,2.0,point_estimate,"['daily', 'adaptive_0.005', 'adaptive_0.01', 'adaptive_0.02', 'adaptive_0.03', 'adaptive_0.05']",6,daily,selected,0.0,1.00462771698631,0.9784778533199454,1.0270850195393144,0.99537228301369,0.9729149804606856
+0.0,3.0,point_estimate,"['daily', 'weekly', 'adaptive_0.005', 'adaptive_0.01', 'adaptive_0.02', 'adaptive_0.03', 'adaptive_0.05']",7,daily,selected,0.0,1.00462771698631,0.9784778533199454,1.0270850195393144,1.99537228301369,1.9729149804606856
+0.0001,1.0,point_estimate,[],0,,no_feasible_strategy,,,,,,
+0.0001,2.0,point_estimate,"['daily', 'adaptive_0.005', 'adaptive_0.01', 'adaptive_0.02', 'adaptive_0.03', 'adaptive_0.05']",6,adaptive_0.05,selected,0.03980091289226676,1.5073887308060754,1.4771347776592478,1.5359631823951112,0.4926112691939246,0.4640368176048888
+0.0001,3.0,point_estimate,"['daily', 'weekly', 'adaptive_0.005', 'adaptive_0.01', 'adaptive_0.02', 'adaptive_0.03', 'adaptive_0.05']",7,weekly,selected,0.03476783279299824,2.260221864917604,2.21339723800445,2.318539207390212,0.7397781350823962,0.681460792609788
+0.0005,1.0,point_estimate,[],0,,no_feasible_strategy,,,,,,
+0.0005,2.0,point_estimate,"['daily', 'adaptive_0.005', 'adaptive_0.01', 'adaptive_0.02', 'adaptive_0.03', 'adaptive_0.05']",6,adaptive_0.05,selected,0.19900456446133383,1.707769783491705,1.6774891323008396,1.7372306309709382,0.29223021650829506,0.2627693690290618
+0.0005,3.0,point_estimate,"['daily', 'weekly', 'adaptive_0.005', 'adaptive_0.01', 'adaptive_0.02', 'adaptive_0.03', 'adaptive_0.05']",7,weekly,selected,0.17383916396499116,2.440469186590293,2.3936877824968303,2.500678362275506,0.5595308134097068,0.4993216377244938
+0.001,1.0,point_estimate,[],0,,no_feasible_strategy,,,,,,
+0.001,2.0,point_estimate,"['daily', 'adaptive_0.005', 'adaptive_0.01', 'adaptive_0.02', 'adaptive_0.03', 'adaptive_0.05']",6,adaptive_0.05,selected,0.39800912892266765,1.9702295310020155,1.939467458962601,2.001044996160498,0.029770468997984523,-0.001044996160497913
+0.001,3.0,point_estimate,"['daily', 'weekly', 'adaptive_0.005', 'adaptive_0.01', 'adaptive_0.02', 'adaptive_0.03', 'adaptive_0.05']",7,weekly,selected,0.3476783279299823,2.668338324260956,2.621147022876069,2.7297542382243125,0.3316616757390438,0.2702457617756875
+0.002,1.0,point_estimate,[],0,,no_feasible_strategy,,,,,,
+0.002,2.0,point_estimate,[],0,,no_feasible_strategy,,,,,,
+0.002,3.0,point_estimate,"['daily', 'adaptive_0.005', 'adaptive_0.01', 'adaptive_0.02', 'adaptive_0.03', 'adaptive_0.05']",6,adaptive_0.05,selected,0.7960182578453353,2.5301011094469867,2.4953169523381797,2.562179524147789,0.46989889055301326,0.43782047585221084
+0.005,1.0,point_estimate,[],0,,no_feasible_strategy,,,,,,
+0.005,2.0,point_estimate,[],0,,no_feasible_strategy,,,,,,
+0.005,3.0,point_estimate,[],0,,no_feasible_strategy,,,,,,

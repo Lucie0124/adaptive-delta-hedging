@@ -1,0 +1,7 @@
+{
+  "shared_paths": true,
+  "fee_invariant_decisions_and_gross_pnl": true,
+  "gross_net_identity_passed": true,
+  "max_absolute_reconciliation_error": 2.291500322826323e-13,
+  "note": "These run diagnostics complement, and do not replace, the full pytest gate."
+}

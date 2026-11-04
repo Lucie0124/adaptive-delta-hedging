@@ -1,0 +1,18 @@
+{
+  "policy_id": "adaptive_0.05",
+  "kappa": 0.001,
+  "risk_budget": 2,
+  "n_paths": 50000,
+  "path_seed": 862202,
+  "bootstrap_seed": 94004,
+  "mean_pnl": -0.41074202596363896,
+  "sd_pnl": 0.6929600014347014,
+  "mae": 0.6302622621031964,
+  "rmse": 0.8055389323985677,
+  "mean_cost": 0.3979906008638085,
+  "var95": 1.5889540761890861,
+  "es95": 1.9699628104541234,
+  "es_low": 1.9485998900428294,
+  "es_high": 1.9903601088144245,
+  "reselected_on_validation_data": false
+}

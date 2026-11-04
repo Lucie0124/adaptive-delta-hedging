@@ -1,0 +1,10 @@
+kappa,risk_budget,selected_policy,calibration_status,status,passes_point_constraint,passes_upper_bound_constraint,es,es_ci_low,es_ci_high,mean_cost,mean_cost_ci_low,mean_cost_ci_high,headroom,upper_bound_headroom,sigma_true
+0.002,1.0,,no_feasible_strategy,no_calibration_feasible_strategy,False,False,,,,,,,,,0.2
+0.002,2.0,,no_feasible_strategy,no_calibration_feasible_strategy,False,False,,,,,,,,,0.2
+0.002,3.0,adaptive_0.05,selected,fixed_policy_evaluation,True,True,2.537173336776799,2.5070446505619075,2.5706696992948994,0.798112789474581,0.7942949604797503,0.8026231292733803,0.462826663223201,0.4293303007051006,0.2
+0.002,1.0,,no_feasible_strategy,no_calibration_feasible_strategy,False,False,,,,,,,,,0.25
+0.002,2.0,,no_feasible_strategy,no_calibration_feasible_strategy,False,False,,,,,,,,,0.25
+0.002,3.0,adaptive_0.05,selected,fixed_policy_evaluation,False,False,6.1792341999532185,6.119002396893867,6.235605251988893,0.9210666716829211,0.916201961442745,0.9263802436083439,-3.1792341999532185,-3.2356052519888934,0.25
+0.002,1.0,,no_feasible_strategy,no_calibration_feasible_strategy,False,False,,,,,,,,,0.3
+0.002,2.0,,no_feasible_strategy,no_calibration_feasible_strategy,False,False,,,,,,,,,0.3
+0.002,3.0,adaptive_0.05,selected,fixed_policy_evaluation,False,False,10.319761681875939,10.23363409255646,10.40339543212736,1.029085665028524,1.022963012581193,1.035936999022745,-7.319761681875939,-7.403395432127359,0.3
