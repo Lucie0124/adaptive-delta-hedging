@@ -165,6 +165,6 @@ University. I subsequently revisited and substantially reworked the study,
 correcting the portfolio accounting, rebuilding the simulation engine, and
 extending the analysis to transaction costs and tail-risk constraints.
 
-## AI assistance
+## Critical review with Codex
 
 OpenAI Codex was used to critically review the initial project, identify accounting and methodological errors, and assist with code revisions, tests, documentation.
